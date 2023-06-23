@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body{
+    background-color: #f9f9f9;
+    font-family: 'Roboto', sans-serif;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+#root{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    max-width: 1100px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+hr{
+    border-color: transparent;
+    background-color: #ddd;
+    margin: 10px 0px 20px 0px;
+}
+
+.cart h1, .product h1{
+    font-size: 1.3rem;
+    color:blueviolet;
+}
+
+.product ul h1{
+    font-size: 1rem;
+    color: rgb(121, 70, 168);
+}
+
+.product li, .cart-area li{
+    display: flex;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 350px;
+    margin-bottom: 15px;
+}
+
+.product img, .cart-area img{
+    width: 160px;
+}
+
+.product ul li div:last-child, .cart-area li div:last-child{
+    padding: 15px;
+}
+
+.product ul button, .cart-area button{
+    padding: 7px 10px;
+    font-size: 0.95rem;
+    color: white;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background-color: blueviolet;
+}
+
+.cart-area button{
+    background-color: red;
+}
+
+.product ul button:hover, .cart-area button:hover{
+    opacity: 0.9;
+}
+
+ul, ol{
+    list-style: none;
+}
