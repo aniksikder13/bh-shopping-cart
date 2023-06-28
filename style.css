@@ -51,18 +51,40 @@ hr{
     padding: 15px;
 }
 
-.product ul button, .cart-area button{
+.product ul button, .cart-area button, .totalCart button{
     padding: 7px 10px;
     font-size: 0.95rem;
     color: white;
     cursor: pointer;
     outline: none;
     border: none;
-    background-color: blueviolet;
+    background-color: rgb(121, 70, 168);
 }
 
-.cart-area button{
+.cart-area .remove, .reamove-All button{
     background-color: red;
+    padding: 5px;
+    font-size: 0.9rem;
+    border: none;
+    color: white;
+}
+
+.cart-area .controler, .controler div{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px!important;
+    align-items: center;
+}
+
+.controler div input{
+    padding: 0px 5px;
+    border: none;
+    outline: none;
+    width: 15px;
+}
+
+.controler div button{
+    padding: 2px 5px;
 }
 
 .product ul button:hover, .cart-area button:hover{
@@ -71,4 +93,18 @@ hr{
 
 ul, ol{
     list-style: none;
+}
+
+.cart-area{
+    height: 300px;
+    overflow-y: auto;
+}
+
+.totalCart{
+    margin-top: 20px;
+}
+
+.totalCart input{
+    padding: 5px 15px;
+    margin: 8px 0px;
 }
